@@ -18,4 +18,7 @@ interface API {
 
     @POST("albums")
     fun postAlbums(@Body albums: Albums): Observable<Albums>
+
+    @GET("/albums")
+    fun getAllAlbums():Observable<List<Albums>>
 }
